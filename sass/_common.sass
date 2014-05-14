@@ -1,49 +1,134 @@
-// # SHORT HOWTO
-// ## Sprites
-//     .whatever
-//          +sized-sprite($icons, coderiver) //or
-// 			+s(codedby) //gets default value for spritemap as $icons
-// ### animation example
-//     +include keyframes(rotate)
-//        from
-//           +rotate(0)
-//        to
-//           +rotate(360)
-// ## animation usage
-//     body:hover
-// 	    +animation(rotate 200s linear infinite)
-// ## animations easing, see easings.net for full list and examples, tnx @ai
-//     transition: all 1.2s ceaser($ease-in)
-// ## gradient example
-//     +background-image(linear-gradient(#232323, #5c5c5c));
-//     +g(#232323, #5c5c5c);
-//	   horizontal
-//     +gh(#232323, #5c5c5c);
-// ## making bw-images
-//     img
-//			@extend %gray
-// ## predefined media-queries: https://github.com/paranoida/sass-mediaqueries
-//     +min-screen(320)
-//			display: none
-// +max-screen(1000), +iphone5, +iphone4, +ipad-retina, +ipad, +hdpi - also available
-//
-// ## use cycles
-//     @for $i from 1 through 3
-//       .item-#{$i}
-//			width: 2em * $i;
-//     @each $s in a,b,c
-// 	    	#{$s}
-//				display: none
-// ## fonts 
-// Save fonts to /css/fonts, after that write (eot, woff, ttf):
-// +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
-	
+// 
+// --------------------------------------------------
+
+// Fonts
+// --------------------------------------------------
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,cyrillic)
+
+// Variables
+// --------------------------------------------------
+$font-base: 'Open Sans', sans-serif
+
+=font-bold
+	font-family: 'Open Sans', sans-serif
+	font-weight: 600
+
+// Common blocks
+// --------------------------------------------------
 body
-	font-size: 12px 
-	font-family: Arial, sans-serif 
+	min-width: 1000px
+	font-size: 14px 
+	font-family: $font-base
 	line-height: 1.4
+	
+.container
+	width: 960px
+	margin-left: auto
+	margin-right: auto
+
+.page
 
 
-// common blocks      
+// Page
+// --------------------------------------------------
+.header
+	height: 79px
+	padding-top: 21px
+	background: #FFF 
+	.header__logo
+		height: 58px
+		+clr
+	.header__logoico
+		margin-right: 20px
+		float: left
+		+s(logo)
+	.header__logodescr
+		overflow: hidden
+		line-height: 1
+		color: #666 
+	.header__logoh3
+		font-size: 34px
+		font-weight: 200 
+	.header__logometa
+		font-size: 12px
+		font-weight: 200
+		font-size: italic
+
+.page
+	position: relative
+	.page__footer
+		height: 100px
+		line-height: 100px
+		background: #00a2cc
+		text-align: center
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		.footer__link
+			display: inline-block
+			font-size: 40px
+			text-transform: uppercase
+			line-height: 1.2 
+			+font-bold
+			color: #FFF
+			text-decoration: none
+			border-bottom: 2px dashed #fff
+			cursor: pointer
+			&:hover
+				border-bottom-color: transparent
+	.page__content
+	// 	+clr
+	// .page__contentleft
+	// 	width: 480px
+	// 	float: left
+	// .page__contentright
+	// 	width: 480px
+	// 	float: right
+
+.page1
+	background: #00AFDD 
+	.h1
+		margin-bottom: 20px
+		font-size: 40px
+		font-weight: normal
+		color: #FFF 
+	.page1__meta
+		margin-bottom: 60px
+		font-size: 18px
+		color: #DBF8FF
+	.page1__list
+		+clr
+		li
+			width: 480px
+			margin-bottom: 10px
+			float: left
+		a
+			font-size: 24px
+			color: #DBF8FF
+			border-bottom: 1px dashed #DBF8FF
+			text-decoration: none
+			+font-bold
+			&:hover
+				border-bottom-color: transparent
+
+.page2
+	.page__align
+		height: 100%
+		background: red
+		text-align: center
+		&:before
+			display: inline-block
+			vertical-align: middle
+			width: 0
+			height: 100%
+			content: ""
+		.page__content
+			background: #faf6f0
+			display: inline-block
+			vertical-align: middle
+			font-size: 36px
+			-webkit-border-radius: 50px
+			border-radius: 50px
+
+	
