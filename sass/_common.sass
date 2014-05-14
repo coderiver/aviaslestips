@@ -26,8 +26,54 @@ body
 	margin-left: auto
 	margin-right: auto
 
-.page
+.h2
+	margin-bottom: 30px
+	font-size: 24px
+	color: #444
+	+font-bold
 
+.paragraph, .more
+	font-size: 14px
+	text-transform: uppercase
+	text-decoration: none
+	color: #CCC
+.paragraph
+	&:before
+		content: ""
+		+arr(10,16,#e2e2e2,l)
+		margin-right: 12px
+		display: inline-block
+		vertical-align: middle
+.more
+	&:after
+		content: ""
+		+arr(10,16,#e2e2e2,r)
+		margin-left: 12px
+		display: inline-block
+		vertical-align: middle
+
+// .ico
+// 	display: inline-block
+// 	vertical-align: middle
+
+// .ico1
+// 	+s(ico1)
+// .ico2
+// 	+s(ico2)
+// .ico3
+// 	+s(ico3)
+// .ico4
+// 	+s(ic4)
+// .ico5
+// 	+s(ico5)
+// .ico6
+// 	+s(ico6)
+// .ico7
+// 	+s(ico7)
+// .ico8
+// 	+s(ico8)
+// .ico9
+// 	+s(ico9)
 
 // Page
 // --------------------------------------------------
@@ -78,13 +124,38 @@ body
 			&:hover
 				border-bottom-color: transparent
 	.page__content
-	// 	+clr
-	// .page__contentleft
-	// 	width: 480px
-	// 	float: left
-	// .page__contentright
-	// 	width: 480px
-	// 	float: right
+		font-size: 18px
+		line-height: 1.8
+		color: #888
+		+clr
+		+font-bold
+	.page__contentleft
+		width: 480px
+		float: left
+	.page__contentright
+		width: 480px
+		float: right
+	.page__contentbottom
+		margin-top: 100px
+		padding-top: 15px
+		border-top: 4px solid #F1F1F1
+		+clr
+	.page__contentbottom
+		+clr
+		.paragraph
+			float: left
+		.more
+			float: right
+	.page__ico
+		text-align: center
+	.page__ico-1
+		margin-top: 85px
+	.page__ico-2
+		margin-top: 100px
+		 
+
+
+
 
 .page1
 	background: #00AFDD 
@@ -113,22 +184,7 @@ body
 				border-bottom-color: transparent
 
 .page2
-	.page__align
-		height: 100%
-		background: red
-		text-align: center
-		&:before
-			display: inline-block
-			vertical-align: middle
-			width: 0
-			height: 100%
-			content: ""
-		.page__content
-			background: #faf6f0
-			display: inline-block
-			vertical-align: middle
-			font-size: 36px
-			-webkit-border-radius: 50px
-			border-radius: 50px
+	.page__content
+
 
 	
