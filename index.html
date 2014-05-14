@@ -196,7 +196,10 @@
 							<div class="form__label">
 								<label class="label">
 									<span>Пункт вылета</span>
-									<input type="text" class="input input_310" value="Москва, Россия MOW">
+									<span class="input-wrap">
+										<input type="text" class="input input_310" value="Москва, Россия MOW">
+										<i class="input-wrap__cross"></i>
+									</span>
 								</label>
 							</div>
 						</div>
@@ -238,10 +241,48 @@
 											<span class="check-groupdescr">В одну сторону</span>
 										</label>
 									</div>
-									<input type="text" class="input input_310" value="Выберите дату">
+									<input type="text" class="input input_310 input_unnactive" value="Выберите дату">
 								</div>
 							</div>
 						</div>
+					</div>
+					<div class="form__row">
+						<div class="form__left">
+							<div class="form__label">
+								<div class="select select_small js-select">
+									<span class="select__value"><em class="js-select-text">1</em><i></i></span>
+									<input type="hidden" val="" class="js-select-input" value="1">
+									<div class="select__drop js-select-drop">
+										<ul>
+											<li data-id="1" class="is-selected">1</li>
+											<li data-id="2">2</li>
+											<li data-id="3">3</li>
+											<li data-id="4">4</li>
+									  </ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form__right">
+							<div class="form__label">
+								<div class="form__labelmeta">Класс перелета</div>
+								<div class="select js-select">
+									<span class="select__value"><em class="js-select-text">Эконом</em><i></i></span>
+									<input type="hidden" val="" class="js-select-input" value="Эконом">
+									<div class="select__drop js-select-drop">
+										<ul>
+											<li data-id="1" class="is-selected">Эконом</li>
+											<li data-id="2">1</li>
+											<li data-id="3">2</li>
+											<li data-id="4">3</li>
+									  </ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form__row">
+						<a href="#" class="form__search">Найти авиабилет</a>
 					</div>
 				</div>
   	  </div>
