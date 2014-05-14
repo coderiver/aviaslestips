@@ -59,16 +59,22 @@ head.ready(function() {
 	heightPage6();
 
 	function heightPage7(){
-		var page7Margin = ((windowheight - page6 - 100) / 2);
+		var page7Margin = ((windowheight - page7 - 100) / 2);
 		$(".page7 .page__content").css('padding-top', page7Margin);
 	}
 	heightPage7();
 
 	function heightPage8(){
-		var page8Margin = ((windowheight - page6 - 100) / 2);
+		var page8Margin = ((windowheight - page8 - 100) / 2);
 		$(".page8 .page__content").css('padding-top', page8Margin);
 	}
 	heightPage8();
+
+	function heightPage9(){
+		var page9Margin = ((windowheight - page9 - 100) / 2);
+		$(".page9 .page__content").css('padding-top', page9Margin);
+	}
+	heightPage9();
 
 	$(window).resize(function() {
 	 heightPage1();
@@ -79,5 +85,6 @@ head.ready(function() {
 	 heightPage6();
 	 heightPage7();
 	 heightPage8();
+	 heightPage9();
 	});
 });

@@ -22,6 +22,8 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { min-width: 1000px; font-size: 14px; font-family: "Open Sans", sans-serif; line-height: 1.4; }
 
+.out { height: 100% !important; height: 100%; margin: 0 auto; overflow: hidden; }
+
 .container { width: 960px; margin-left: auto; margin-right: auto; }
 
 .h2 { margin-bottom: 30px; font-size: 24px; color: #444444; font-family: "Open Sans", sans-serif; font-weight: 600; }
@@ -35,7 +37,7 @@ body { min-width: 1000px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .header { height: 79px; padding-top: 21px; background: white; }
 .header .header__logo { height: 58px; *zoom: 1; }
 .header .header__logo:after { content: " "; display: table; clear: both; }
-.header .header__logoico { margin-right: 20px; float: left; background: url('../img/icons-s0437c3815e.png') 0 0 no-repeat; width: 57px; height: 57px; }
+.header .header__logoico { margin-right: 20px; float: left; background: url('../img/icons-s604faf6de4.png') 0 0 no-repeat; width: 57px; height: 57px; }
 .header .header__logodescr { overflow: hidden; line-height: 1; color: #666666; }
 .header .header__logoh3 { font-size: 34px; font-weight: 200; }
 .header .header__logometa { font-size: 12px; font-weight: 200; font-size: italic; }
@@ -71,6 +73,37 @@ body { min-width: 1000px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .page1 .page1__list li { width: 480px; margin-bottom: 10px; float: left; }
 .page1 .page1__list a { font-size: 24px; color: #dbf8ff; border-bottom: 1px dashed #dbf8ff; text-decoration: none; font-family: "Open Sans", sans-serif; font-weight: 600; }
 .page1 .page1__list a:hover { border-bottom-color: transparent; }
+
+.page9 { background: #19abd1; }
+.page9 .page__content { color: white; }
+
+.form { width: 660px; margin-left: auto; margin-right: auto; *zoom: 1; }
+.form:after { content: " "; display: table; clear: both; }
+.form .form__row { overflow: hidden; margin-bottom: 20px; }
+.form .form__left { width: 310px; float: left; }
+.form .form__right { width: 310px; float: right; }
+.form .form__labeltop { *zoom: 1; }
+.form .form__labeltop:after { content: " "; display: table; clear: both; }
+.form .form__labeltop-descr { float: left; }
+.form .check-group { float: right; }
+.form .check-groupdescr { cursor: pointer; }
+
+.label { display: block; }
+.label span { margin-bottom: 5px; display: block; line-height: 1.4; text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2); font-family: "Open Sans", sans-serif; font-weight: 600; }
+
+.input { height: 40px; padding: 5px 11px; font-size: 18px; color: #444444; font-family: "Open Sans", sans-serif; font-weight: 600; }
+.input:-ms-input-placeholder { color: #cccccc; }
+.input:-moz-placeholder { color: #cccccc; }
+.input::-moz-placeholder { color: #cccccc; }
+.input::-webkit-input-placeholder { color: #cccccc; }
+.input::placeholder { color: #cccccc; }
+.input.input_310 { width: 288px; }
+
+.checkbox { position: relative; cursor: pointer; }
+.checkbox input { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; }
+.checkbox input + span { margin-left: 10px; }
+.checkbox input + span .checkbox__ico { content: ""; background: url('../img/icons-s604faf6de4.png') 0 -335px no-repeat; width: 18px; height: 18px; position: absolute; top: 3px; left: 0px; }
+.checkbox input:checked + span .checkbox__ico:after { content: ""; background: url('../img/icons-s604faf6de4.png') 0 -141px no-repeat; width: 18px; height: 18px; position: absolute; top: 0px; left: 0px; z-index: 666; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }

@@ -20,7 +20,13 @@ body
 	font-size: 14px 
 	font-family: $font-base
 	line-height: 1.4
-	
+
+.out
+	height: 100% !important
+	height: 100%
+	margin: 0 auto
+	overflow: hidden
+
 .container
 	width: 960px
 	margin-left: auto
@@ -51,29 +57,6 @@ body
 		margin-left: 12px
 		display: inline-block
 		vertical-align: middle
-
-// .ico
-// 	display: inline-block
-// 	vertical-align: middle
-
-// .ico1
-// 	+s(ico1)
-// .ico2
-// 	+s(ico2)
-// .ico3
-// 	+s(ico3)
-// .ico4
-// 	+s(ic4)
-// .ico5
-// 	+s(ico5)
-// .ico6
-// 	+s(ico6)
-// .ico7
-// 	+s(ico7)
-// .ico8
-// 	+s(ico8)
-// .ico9
-// 	+s(ico9)
 
 // Page
 // --------------------------------------------------
@@ -189,8 +172,78 @@ body
 			&:hover
 				border-bottom-color: transparent
 
-.page2
+.page9
+	background: #19abd1
 	.page__content
+		color: #fff
+
+.form
+	width: 660px
+	margin-left: auto
+	margin-right: auto
+	+clr
+	.form__row
+		overflow: hidden
+		margin-bottom: 20px
+		&.form__row_route
+
+	.form__left
+		width: 310px
+		float: left
+	.form__right
+		width: 310px
+		float: right
+	.form__label
+	.form__labeltop
+		+clr
+	.form__labeltop-descr
+		float: left
+	.check-group
+		float: right
+	.check-groupdescr
+		cursor: pointer
+.label
+	display: block
+	span
+		margin-bottom: 5px
+		display: block
+		line-height: 1.4
+		+text-shadow(0px 1px 1px rgba(#000, .2))
+		+font-bold
+
+.input
+	height: 40px
+	padding: 5px 11px
+	font-size: 18px
+	color: #444
+	+font-bold
+	+placeholder
+		color: #ccc 
+	&.input_310
+		width: 288px
+
+.checkbox
+	position: relative
+	cursor: pointer
+	input
+		+opacity(0)
+	input + span
+		margin-left: 10px
+		.checkbox__ico
+			content: ""
+			+s(i-checkbox)
+			position: absolute
+			top: 3px
+			left: 0px
+	input:checked + span
+		.checkbox__ico
+			&:after
+				content: ""
+				+s(i-checkbox_ch)
+				position: absolute
+				top: 0px
+				left: 0px
+				z-index: 666
 
 
 	
