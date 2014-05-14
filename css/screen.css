@@ -55,8 +55,13 @@ body { min-width: 1000px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .page .page__contentbottom .paragraph { float: left; }
 .page .page__contentbottom .more { float: right; }
 .page .page__ico { text-align: center; }
-.page .page__ico-1 { margin-top: 85px; }
+.page .page__ico-1 { margin-top: 125px; }
 .page .page__ico-2 { margin-top: 100px; }
+.page .page__ico-3 { margin-top: 100px; }
+.page .page__ico-4 { margin-top: 120px; }
+.page .page__ico-5 { margin-top: 120px; }
+.page .page__ico-6 { margin-top: 120px; }
+.page .page__ico-7 { margin-top: 120px; }
 
 .page1 { background: #00afdd; }
 .page1 .h1 { margin-bottom: 20px; font-size: 40px; font-weight: normal; color: white; }

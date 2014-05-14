@@ -35,14 +35,49 @@ head.ready(function() {
 
 	// heightPage3
 	function heightPage3(){
-		var page2Margin = ((windowheight - page2 - 100) / 2);
-		$(".page3 .page__content").css('padding-top', page2Margin);
+		var page3Margin = ((windowheight - page3 - 100) / 2);
+		$(".page3 .page__content").css('padding-top', page3Margin);
 	}
 	heightPage3();
+
+	function heightPage4(){
+		var page4Margin = ((windowheight - page4 - 100) / 2);
+		$(".page4 .page__content").css('padding-top', page4Margin);
+	}
+	heightPage4();
+
+	function heightPage5(){
+		var page5Margin = ((windowheight - page5 - 100) / 2);
+		$(".page5 .page__content").css('padding-top', page5Margin);
+	}
+	heightPage5();
+
+	function heightPage6(){
+		var page6Margin = ((windowheight - page6 - 100) / 2);
+		$(".page6 .page__content").css('padding-top', page6Margin);
+	}
+	heightPage6();
+
+	function heightPage7(){
+		var page7Margin = ((windowheight - page6 - 100) / 2);
+		$(".page7 .page__content").css('padding-top', page7Margin);
+	}
+	heightPage7();
+
+	function heightPage8(){
+		var page8Margin = ((windowheight - page6 - 100) / 2);
+		$(".page8 .page__content").css('padding-top', page8Margin);
+	}
+	heightPage8();
 
 	$(window).resize(function() {
 	 heightPage1();
 	 heightPage2();
 	 heightPage3();
+	 heightPage4();
+	 heightPage5();
+	 heightPage6();
+	 heightPage7();
+	 heightPage8();
 	});
 });
