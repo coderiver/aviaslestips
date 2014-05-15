@@ -69,6 +69,7 @@ body { min-width: 1000px; font-size: 14px; font-family: "Open Sans", sans-serif;
 
 .page1 { background: #00afdd; }
 .page1 .page__all { height: 100%; }
+.page1 .page__all .page__content { height: inherit; position: static; margin-top: 0; }
 .page1 .h1 { margin-bottom: 20px; font-size: 40px; font-weight: normal; color: white; }
 .page1 .page1__meta { margin-bottom: 60px; font-size: 18px; color: #dbf8ff; }
 .page1 .page1__list { *zoom: 1; }

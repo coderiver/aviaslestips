@@ -44,7 +44,7 @@ head.ready(function() {
 
 	// global var
 	var windowheight = $(window).height();
-	var page1ContentHeight = $(".page1 .page1__in").height();
+	var page1ContentHeight = $(".page1 .page__content").height();
 	var page2 = $(".js-content2").height();
 	var page3 = $(".js-content3").height();
 	var page4 = $(".js-content4").height();
@@ -62,9 +62,8 @@ head.ready(function() {
 
 	// heightPage1
 	function heightPage1(){
-		var page1Margin = ((windowheight - page1ContentHeight - 200));
-		$(".page1 .page1__in").css('margin-top', page1Margin);
-		// alert(page1ContentHeight);
+		var page1Margin = ((windowheight - page1ContentHeight - 200) / 2);
+		$(".page1 .page__content").css('margin-top', page1Margin);
 	}
 	heightPage1();
 
