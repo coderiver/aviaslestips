@@ -10,6 +10,9 @@
 	<link rel="stylesheet" media="screen" href="css/onepage-scroll.css" >
 </head>
 <body>
+<div class="page__footer">
+  <a href="#" class="footer__link">Попробуйте сейчас</a>
+</div>
 
 <!-- BEGIN  main-->
 <div class="main">
@@ -41,9 +44,6 @@
     			</div>
     		</div>
     	</div>
-      <div class="page__footer">
-      	<a href="#" class="footer__link">Попробуйте сейчас</a>
-      </div>
     </div>
   </section>
   <section class="page page2">
@@ -61,9 +61,6 @@
 					<img src="img/ico1.jpg" alt="">
 				</div>
 			</div>
-			<div class="page__footer">
-				<a href="#" class="footer__link">Попробуйте сейчас</a>
-			</div>
     </div>
   </section>
   <section class="page page3">
@@ -79,9 +76,6 @@
   	  			<a href="#" class="more">Еще</a>
   	  		</div>
   	  	</div>
-  	  </div>
-  	  <div class="page__footer">
-  	  	<a href="#" class="footer__link">Попробуйте сейчас</a>
   	  </div>
   	</div>
   </section>
@@ -100,9 +94,6 @@
   	  		<img src="img/ico3.jpg" alt="">
   	  	</div>
   	  </div>
-  	  <div class="page__footer">
-  	  	<a href="#" class="footer__link">Попробуйте сейчас</a>
-  	  </div>
   	</div>
   </section>
   <section class="page page5">
@@ -118,9 +109,6 @@
   	  	<div class="page__contentright page__ico page__ico-4">
   	  		<img src="img/ico4.jpg" alt="">
   	  	</div>
-  	  </div>
-  	  <div class="page__footer">
-  	  	<a href="#" class="footer__link">Попробуйте сейчас</a>
   	  </div>
   	</div>
   </section>
@@ -139,9 +127,6 @@
   	  		<img src="img/ico5.jpg" alt="">
   	  	</div>
   	  </div>
-  	  <div class="page__footer">
-  	  	<a href="#" class="footer__link">Попробуйте сейчас</a>
-  	  </div>
   	</div>
   </section>
   <section class="page page7">
@@ -157,9 +142,6 @@
 						<a href="#" class="more">Еще</a>
 					</div>
   	  	</div>
-  	  </div>
-  	  <div class="page__footer">
-  	  	<a href="#" class="footer__link">Попробуйте сейчас</a>
   	  </div>
   	</div>
   </section>
@@ -177,9 +159,6 @@
   	  	<div class="page__contentright page__ico page__ico-7">
   	  		<img src="img/ico7.jpg" alt="">
   	  	</div>
-  	  </div>
-  	  <div class="page__footer">
-  	  	<a href="#" class="footer__link">Попробуйте сейчас</a>
   	  </div>
   	</div>
   </section>
@@ -221,7 +200,10 @@
 										<span class="check-groupdescr">+3 дня</span>
 									</label>
 								</div>
-								<input type="text" class="input input_310" value="12 марта 2014">
+                <div class="calendar">
+                  <input type="text" class="input input_310" value="12 марта 2014">
+                  <div class="calendar__ico"></div>
+                </div>
 							</div>
 						</div>
 						<div class="form__right">
@@ -237,7 +219,11 @@
 											<span class="check-groupdescr">В одну сторону</span>
 										</label>
 									</div>
-									<input type="text" class="input input_310 input_unnactive" value="Выберите дату">
+                  <div class="calendar calendar_innactive">
+                    <input type="text" class="input input_310 input_unnactive" placeholder="Выберите дату" disabled>
+                    <div class="calendar__ico"></div>
+                  </div>
+									
 								</div>
 							</div>
 						</div>
@@ -317,9 +303,6 @@
 						<a href="#" class="form__search">Найти авиабилет</a>
 					</div>
 				</div>
-  	  </div>
-  	  <div class="page__footer">
-  	  	<a href="#" class="footer__link">Скрыть поисковую форму</a>
   	  </div>
   	</div>
   </section>

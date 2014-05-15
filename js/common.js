@@ -53,6 +53,12 @@ head.ready(function() {
 	var page7 = $(".js-content7").height();
 	var page8 = $(".js-content8").height();
 	var page9 = $(".js-content9").height();
+	var onePagePagination = $(".onepage-pagination").height();
+
+	function PaginationMargin(){
+		$(".onepage-pagination").css('margin-top', -(onePagePagination / 2));
+	}
+	PaginationMargin();
 
 	// heightPage1
 	function heightPage1(){
@@ -122,7 +128,9 @@ head.ready(function() {
 	 heightPage7();
 	 heightPage8();
 	 heightPage9();
+	 PaginationMargin();
 	});
+
 
 
 });
