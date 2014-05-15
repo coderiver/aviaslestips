@@ -72,45 +72,46 @@ head.ready(function() {
 	function heightPage2(){
 		var page2Margin = ((windowheight - page2 - 100) / 2);
 		$(".page2 .page__content").css('padding-top', page2Margin);
+		alert(page2);
 	}
-	heightPage2();
+	//heightPage2();
 
 	// heightPage3
 	function heightPage3(){
 		var page3Margin = ((windowheight - page3 - 100) / 2);
 		$(".page3 .page__content").css('padding-top', page3Margin);
 	}
-	heightPage3();
+	//heightPage3();
 
 	function heightPage4(){
 		var page4Margin = ((windowheight - page4 - 100) / 2);
 		$(".page4 .page__content").css('padding-top', page4Margin);
 	}
-	heightPage4();
+	//heightPage4();
 
 	function heightPage5(){
 		var page5Margin = ((windowheight - page5 - 100) / 2);
 		$(".page5 .page__content").css('padding-top', page5Margin);
 	}
-	heightPage5();
+	//heightPage5();
 
 	function heightPage6(){
 		var page6Margin = ((windowheight - page6 - 100) / 2);
 		$(".page6 .page__content").css('padding-top', page6Margin);
 	}
-	heightPage6();
+	//heightPage6();
 
 	function heightPage7(){
 		var page7Margin = ((windowheight - page7 - 100) / 2);
 		$(".page7 .page__content").css('padding-top', page7Margin);
 	}
-	heightPage7();
+	//heightPage7();
 
 	function heightPage8(){
 		var page8Margin = ((windowheight - page8 - 100) / 2);
 		$(".page8 .page__content").css('padding-top', page8Margin);
 	}
-	heightPage8();
+	//heightPage8();
 
 	function heightPage9(){
 		var page9Margin = ((windowheight - page9 - 100) / 2);
@@ -120,13 +121,13 @@ head.ready(function() {
 
 	$(window).resize(function() {
 	 heightPage1();
-	 heightPage2();
-	 heightPage3();
-	 heightPage4();
-	 heightPage5();
-	 heightPage6();
-	 heightPage7();
-	 heightPage8();
+	 // heightPage2();
+	 // heightPage3();
+	 // heightPage4();
+	 // heightPage5();
+	 // heightPage6();
+	 // heightPage7();
+	 // heightPage8();
 	 heightPage9();
 	 PaginationMargin();
 	});
