@@ -62,7 +62,7 @@ head.ready(function() {
 
 	// heightPage1
 	function heightPage1(){
-		var page1Margin = ((windowheight - page1ContentHeight - 200) / 2);
+		var page1Margin = ((windowheight - page1ContentHeight - 200));
 		$(".page1 .page1__in").css('margin-top', page1Margin);
 		// alert(page1ContentHeight);
 	}
