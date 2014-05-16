@@ -7,16 +7,31 @@
 	<meta name="viewport" content="width=1000">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
-	<link rel="stylesheet" media="screen" href="css/onepage-scroll.css" >
 </head>
 <body>
-<div class="page__footer">
-  <a href="#9" class="footer__link js-scrollTo">Попробуйте сейчас</a>
+<div class="js-nav">
+
+  <div class="page__footer">
+    <a href="#js-slide8" class="footer__link">Попробуйте сейчас</a>
+  </div>
+
+  <div class="nav">
+    <ul>
+      <li><a href="#js-slide1"></a></li>
+      <li><a href="#js-slide2"></a></li>
+      <li><a href="#js-slide3"></a></li>
+      <li><a href="#js-slide4"></a></li>
+      <li><a href="#js-slide5"></a></li>
+      <li><a href="#js-slide6"></a></li>
+      <li><a href="#js-slide7"></a></li>
+    </ul>
+  </div>
+
 </div>
 
 <!-- BEGIN  main-->
 <div class="main">
-  <section class="page page1">
+  <section class="page page1 js-slide">
     <div class="page__all">
       <div class="header">
         <div class="header-i container">
@@ -32,21 +47,21 @@
             <div class="page1__meta">
               <p>Мы расскажем, на что нужно обратить внимание при покупке авиабилетов онлайн</p>
             </div>
-            <ul class="page1__list">
-              <li><a href="#">Сравнивайте цены</a></li>
-              <li><a href="#">Берегите своё время</a></li>
-              <li><a href="#">Доверяйте надёжным сайтам</a></li>
-              <li><a href="#">Платите картой</a></li>
-              <li><a href="#">Поиграйте с датами</a></li>
-              <li><a href="#">Путешествуйте с картой</a></li>
-              <li><a href="#">Ищите на aviasales.ru</a></li>
+            <ul class="page1__list js-nav">
+              <li><a href="#js-slide1">Сравнивайте цены</a></li>
+              <li><a href="#js-slide2">Берегите своё время</a></li>
+              <li><a href="#js-slide3">Доверяйте надёжным сайтам</a></li>
+              <li><a href="#js-slide4">Платите картой</a></li>
+              <li><a href="#js-slide5">Поиграйте с датами</a></li>
+              <li><a href="#js-slide6">Путешествуйте с картой</a></li>
+              <li><a href="#js-slide7">Ищите на aviasales.ru</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="page page2">
+  <section class="page page2 js-slide" id="js-slide1">
     <div class="page__all container">
 			<div class="page__content js-content2">
         <div class="page__contentleft">
@@ -81,7 +96,7 @@
 			</div>
     </div>
   </section>
-  <section class="page page3">
+  <section class="page page3 js-slide" id="js-slide2">
   	<div class="page__all container">
   	  <div class="page__content js-content3">
   	  	<div class="page__contentleft page__ico page__ico-2">
@@ -116,7 +131,7 @@
   	  </div>
   	</div>
   </section>
-  <section class="page page4">
+  <section class="page page4 js-slide" id="js-slide3">
   	<div class="page__all container">
   	  <div class="page__content js-content4">
   	  	<div class="page__contentleft">
@@ -151,7 +166,7 @@
   	  </div>
   	</div>
   </section>
-  <section class="page page5">
+  <section class="page page5 js-slide" id="js-slide4">
   	<div class="page__all container">
   	  <div class="page__content js-content5">
   	  	<div class="page__contentleft page__ico page__ico-4">
@@ -186,7 +201,7 @@
   	  </div>
   	</div>
   </section>
-  <section class="page page6">
+  <section class="page page6 js-slide" id="js-slide5">
   	<div class="page__all container">
   	  <div class="page__content js-content6">
   	  	<div class="page__contentleft">
@@ -220,7 +235,7 @@
       </div>
   	</div>
   </section>
-  <section class="page page7">
+  <section class="page page7 js-slide" id="js-slide6">
   	<div class="page__all container">
   	  <div class="page__content js-content7">
   	  	<div class="page__contentleft age__ico page__ico-6">
@@ -255,7 +270,7 @@
   	  </div>
   	</div>
   </section>
-  <section class="page page8">
+  <section class="page page8 js-slide" id="js-slide7">
   	<div class="page__all container">
   	  <div class="page__content js-content8">
   	  	<div class="page__contentleft">
@@ -290,7 +305,7 @@
   	  </div>
   	</div>
   </section>
-  <section class="page page9 js-form" id="9">
+  <section class="page page9 js-slide" id="js-slide8">
     <div class="page__all container">
       <div class="page__content js-content9">
         <div class="form">
