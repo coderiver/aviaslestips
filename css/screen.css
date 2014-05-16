@@ -67,7 +67,8 @@ body { min-width: 1000px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .page .page__ico-6 { margin-top: 120px; }
 .page .page__ico-7 { margin-top: 120px; }
 
-.page9 { z-index: 200; }
+.page9 { z-index: 3333; }
+.page9 .page__footer { position: absolute; bottom: 0; }
 
 .page1 { z-index: 2200; background: #00afdd; }
 .page1 .page__all { height: 100%; }
