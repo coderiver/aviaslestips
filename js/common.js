@@ -2,10 +2,11 @@ head.ready(function() {
 	// console.log($('body').html());
 	$(".main").onepage_scroll({
 	  sectionContainer: "section",
-	  responsiveFallback: 600,
-	  loop: true
+	  esponsiveFallback: false,
+	  updateURL: false, 
+	  loop: false
 	});
-
+	// $(".js-scrollTo").moveTo(9);
 	//select
 	function select() {
 		var el = $('.js-select');
@@ -131,6 +132,13 @@ head.ready(function() {
 	 PaginationMargin();
 	});
 
+// $(".js-feedback").click(function (){
+//   var page = $(this).attr("href");
+//   $('html, body').animate({
+//    scrollTop: $(page).offset().top
+//   }, 500);
+//   return false;
+//  });
 
 
 });

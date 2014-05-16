@@ -76,12 +76,12 @@ body { min-width: 1000px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .page1 .page1__list:after { content: " "; display: table; clear: both; }
 .page1 .page1__list li { width: 480px; margin-bottom: 10px; float: left; }
 .page1 .page1__list a { font-size: 24px; color: #dbf8ff; border-bottom: 1px dashed #dbf8ff; text-decoration: none; font-family: "Open Sans", sans-serif; font-weight: 600; }
-.page1 .page1__list a:hover { border-bottom-color: transparent; }
+.page1 .page1__list a:hover { color: white; border-bottom-color: white; }
 
-.page9 { background: #19abd1; }
+.page9 { width: 100%; background: #19abd1; }
 .page9 .page__content { color: white; }
 
-.form { width: 660px; margin-left: auto; margin-right: auto; *zoom: 1; }
+.form { width: 660px; margin-left: 150px; *zoom: 1; }
 .form:after { content: " "; display: table; clear: both; }
 .form .form__row { *zoom: 1; margin-bottom: 20px; }
 .form .form__row:after { content: " "; display: table; clear: both; }
