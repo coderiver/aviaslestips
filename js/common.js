@@ -1,20 +1,25 @@
 head.ready(function() {
 
+	$('.js-send-form').on('click', function() {
+	 $(".js-form").addClass("is-active");
 
-	// scrollnav
-	// function scrollnav() {
-	// 	$(".js-nav a").click(function (){
-	// 	  var page = $(this).attr("href");
-	// 	  $(page).addClass('is-active');
-	// 	  $('html, body').animate({
-	// 	   scrollTop: $(page).offset().top
-	// 	  }, 500);
-	// 	  $(this).addClass('is-active');
-	// 	  return false;
-	// 	 });
-	// }
-	// scrollnav();
+	 // var windowheight = $(window).height();
 
+	 // var butttonoOffset = $(this).offset().top;
+	 // var butttonHeight = (butttonoOffset +75);
+
+	 // var top = (butttonHeight - windowheight);
+
+	 // $(".js-form").css("top", top);
+	 
+	 // alert(butttonoOffset);
+	 return false;
+	});
+
+	$('.js-close-form').on('click', function() {
+		$(".js-form").removeClass("is-active");
+		return false;
+	});
 
 	function scrollnav() {
 	   $(".js-slide").each(function(){
@@ -75,93 +80,6 @@ head.ready(function() {
 
 	// global var
 	var windowheight = $(window).height();
-	var page1ContentHeight = $(".page1 .page__content").height();
-	var page2 = $(".js-content2").height();
-	var page3 = $(".js-content3").height();
-	var page4 = $(".js-content4").height();
-	var page5 = $(".js-content5").height();
-	var page6 = $(".js-content6").height();
-	var page7 = $(".js-content7").height();
-	var page8 = $(".js-content8").height();
-	var page9 = $(".js-content9").height();
-	var onePagePagination = $(".onepage-pagination").height();
-
-	function PaginationMargin(){
-		$(".onepage-pagination").css('margin-top', -(onePagePagination / 2));
-	}
-	PaginationMargin();
-
-	// heightPage1
-	function heightPage1(){
-		var page1Margin = ((windowheight - page1ContentHeight - 200) / 2);
-		$(".page1 .page__content").css('margin-top', page1Margin);
-	}
-	heightPage1();
-
-	// heightPage2
-	function heightPage2(){
-		var page2Margin = ((windowheight - page2 - 100) / 2);
-		$(".page2 .page__content").css('padding-top', page2Margin);
-		alert(page2);
-	}
-	//heightPage2();
-
-	// heightPage3
-	function heightPage3(){
-		var page3Margin = ((windowheight - page3 - 100) / 2);
-		$(".page3 .page__content").css('padding-top', page3Margin);
-	}
-	//heightPage3();
-
-	function heightPage4(){
-		var page4Margin = ((windowheight - page4 - 100) / 2);
-		$(".page4 .page__content").css('padding-top', page4Margin);
-	}
-	//heightPage4();
-
-	function heightPage5(){
-		var page5Margin = ((windowheight - page5 - 100) / 2);
-		$(".page5 .page__content").css('padding-top', page5Margin);
-	}
-	//heightPage5();
-
-	function heightPage6(){
-		var page6Margin = ((windowheight - page6 - 100) / 2);
-		$(".page6 .page__content").css('padding-top', page6Margin);
-	}
-	//heightPage6();
-
-	function heightPage7(){
-		var page7Margin = ((windowheight - page7 - 100) / 2);
-		$(".page7 .page__content").css('padding-top', page7Margin);
-	}
-	//heightPage7();
-
-	function heightPage8(){
-		var page8Margin = ((windowheight - page8 - 100) / 2);
-		$(".page8 .page__content").css('padding-top', page8Margin);
-	}
-	//heightPage8();
-
-	function heightPage9(){
-		var page9Margin = ((windowheight - page9 - 100) / 2);
-		$(".page9 .page__content").css('padding-top', page9Margin);
-	}
-	heightPage9();
-
-	$(window).resize(function() {
-	 heightPage1();
-	 // heightPage2();
-	 // heightPage3();
-	 // heightPage4();
-	 // heightPage5();
-	 // heightPage6();
-	 // heightPage7();
-	 // heightPage8();
-	 heightPage9();
-	 PaginationMargin();
-
-	});
 
 	$(window).scroll(function(){
 		scrollnav();
@@ -169,7 +87,10 @@ head.ready(function() {
 
 	function height(){
 		$('.js-slide').height(windowheight);
+		$('.js-form').height(windowheight);
 	}
 	height();
+
+
 
 });

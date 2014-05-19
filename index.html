@@ -9,12 +9,12 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 </head>
 <body>
+
+<div class="page__footer">
+  <a href="#" class="footer__link js-send-form">Попробуйте сейчас</a>
+</div>
+
 <div class="js-nav">
-
-  <div class="page__footer">
-    <a href="#js-slide8" class="footer__link">Попробуйте сейчас</a>
-  </div>
-
   <div class="nav">
     <ul>
       <li><a href="#js-slide1"></a></li>
@@ -26,7 +26,6 @@
       <li><a href="#js-slide7"></a></li>
     </ul>
   </div>
-
 </div>
 
 <!-- BEGIN  main-->
@@ -305,155 +304,156 @@
   	  </div>
   	</div>
   </section>
-  <section class="page page9 js-slide" id="js-slide8">
-    <div class="page__all container">
-      <div class="page__content js-content9">
-        <div class="form">
-          <div class="form__row form__row_route">
-            <div class="form__left">
-              <div class="form__label">
-                <label class="label">
-                  <span>Пункт вылета</span>
-                  <span class="input-wrap">
-                    <input type="text" class="input input_310" value="Москва, Россия MOW">
-                    <i class="input-wrap__cross"></i>
-                  </span>
+</div>
+<!-- ./ main-->
+
+<div class="page page9 js-form">
+  <div class="page__all container">
+    <div class="page__content js-content9">
+      <div class="form">
+        <div class="form__row form__row_route">
+          <div class="form__left">
+            <div class="form__label">
+              <label class="label">
+                <span>Пункт вылета</span>
+                <span class="input-wrap">
+                  <input type="text" class="input input_310" value="Москва, Россия MOW">
+                  <i class="input-wrap__cross"></i>
+                </span>
+              </label>
+            </div>
+          </div>
+          <div class="form__right">
+            <div class="form__label">
+              <label class="label">
+                <span>Пункт вылета</span>
+                <input type="text" class="input input_310" placeholder="Куда летим?">
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="form__left">
+            <div class="form__label">
+              <div class="form__labeltop">
+                <span class="form__labeltop-descr">Туда</span>
+                <label class="check-group">
+                  <label class="checkbox">
+                    <input type="checkbox">
+                    <span><i class="checkbox__ico"></i></span>
+                  </label>
+                  <span class="check-groupdescr">+3 дня</span>
                 </label>
               </div>
-            </div>
-            <div class="form__right">
-              <div class="form__label">
-                <label class="label">
-                  <span>Пункт вылета</span>
-                  <input type="text" class="input input_310" placeholder="Куда летим?">
-                </label>
+              <div class="calendar">
+                <input type="text" class="input input_310" value="12 марта 2014">
+                <div class="calendar__ico"></div>
               </div>
             </div>
           </div>
-          <div class="form__row">
-            <div class="form__left">
+          <div class="form__right">
+            <div class="form__label">
               <div class="form__label">
                 <div class="form__labeltop">
-                  <span class="form__labeltop-descr">Туда</span>
+                  <span class="form__labeltop-descr">Обратно</span>
                   <label class="check-group">
                     <label class="checkbox">
-                      <input type="checkbox">
+                      <input type="checkbox" checked>
                       <span><i class="checkbox__ico"></i></span>
                     </label>
-                    <span class="check-groupdescr">+3 дня</span>
+                    <span class="check-groupdescr">В одну сторону</span>
                   </label>
                 </div>
-                <div class="calendar">
-                  <input type="text" class="input input_310" value="12 марта 2014">
+                <div class="calendar calendar_innactive">
+                  <input type="text" class="input input_310 input_unnactive" placeholder="Выберите дату" disabled>
                   <div class="calendar__ico"></div>
                 </div>
-              </div>
-            </div>
-            <div class="form__right">
-              <div class="form__label">
-                <div class="form__label">
-                  <div class="form__labeltop">
-                    <span class="form__labeltop-descr">Обратно</span>
-                    <label class="check-group">
-                      <label class="checkbox">
-                        <input type="checkbox" checked>
-                        <span><i class="checkbox__ico"></i></span>
-                      </label>
-                      <span class="check-groupdescr">В одну сторону</span>
-                    </label>
-                  </div>
-                  <div class="calendar calendar_innactive">
-                    <input type="text" class="input input_310 input_unnactive" placeholder="Выберите дату" disabled>
-                    <div class="calendar__ico"></div>
-                  </div>
-                  
-                </div>
+                
               </div>
             </div>
           </div>
-          <div class="form__row">
-            <div class="form__left">
-              <div class="form__label">
-                <div class="form__labelmeta">Количество пассажиров</div>
-                <div class="select_small-wrap">
-                  <div class="select_small-label">
-                    <i class="select_small-ico select_small-icoman"></i>
-                    <div class="select select_small select_smallfirst js-select">
-                      <span class="select__value"><em class="js-select-text">1</em><i></i></span>
-                      <input type="hidden" val="" class="js-select-input" value="1">
-                      <div class="select__drop js-select-drop">
-                        <ul>
-                          <li data-id="1" class="is-selected">1</li>
-                          <li data-id="2">2</li>
-                          <li data-id="3">3</li>
-                          <li data-id="4">4</li>
-                        </ul>
-                      </div>
+        </div>
+        <div class="form__row">
+          <div class="form__left">
+            <div class="form__label">
+              <div class="form__labelmeta">Количество пассажиров</div>
+              <div class="select_small-wrap">
+                <div class="select_small-label">
+                  <i class="select_small-ico select_small-icoman"></i>
+                  <div class="select select_small select_smallfirst js-select">
+                    <span class="select__value"><em class="js-select-text">1</em><i></i></span>
+                    <input type="hidden" val="" class="js-select-input" value="1">
+                    <div class="select__drop js-select-drop">
+                      <ul>
+                        <li data-id="1" class="is-selected">1</li>
+                        <li data-id="2">2</li>
+                        <li data-id="3">3</li>
+                        <li data-id="4">4</li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="select_small-label">
-                    <i class="select_small-ico select_small-icokid"></i>
-                    <div class="select select_small js-select">
-                      <span class="select__value"><em class="js-select-text">1</em><i></i></span>
-                      <input type="hidden" val="" class="js-select-input" value="1">
-                      <div class="select__drop js-select-drop">
-                        <ul>
-                          <li data-id="1" class="is-selected">1</li>
-                          <li data-id="2">2</li>
-                          <li data-id="3">3</li>
-                          <li data-id="4">4</li>
-                        </ul>
-                      </div>
+                </div>
+                <div class="select_small-label">
+                  <i class="select_small-ico select_small-icokid"></i>
+                  <div class="select select_small js-select">
+                    <span class="select__value"><em class="js-select-text">1</em><i></i></span>
+                    <input type="hidden" val="" class="js-select-input" value="1">
+                    <div class="select__drop js-select-drop">
+                      <ul>
+                        <li data-id="1" class="is-selected">1</li>
+                        <li data-id="2">2</li>
+                        <li data-id="3">3</li>
+                        <li data-id="4">4</li>
+                      </ul>
                     </div>
                   </div>
-                  <div class="select_small-label">
-                    <i class="select_small-ico select_small-icowoman"></i>
-                    <div class="select select_small js-select">
-                      <span class="select__value"><em class="js-select-text">1</em><i></i></span>
-                      <input type="hidden" val="" class="js-select-input" value="1">
-                      <div class="select__drop js-select-drop">
-                        <ul>
-                          <li data-id="1" class="is-selected">1</li>
-                          <li data-id="2">2</li>
-                          <li data-id="3">3</li>
-                          <li data-id="4">4</li>
-                        </ul>
-                      </div>
+                </div>
+                <div class="select_small-label">
+                  <i class="select_small-ico select_small-icowoman"></i>
+                  <div class="select select_small js-select">
+                    <span class="select__value"><em class="js-select-text">1</em><i></i></span>
+                    <input type="hidden" val="" class="js-select-input" value="1">
+                    <div class="select__drop js-select-drop">
+                      <ul>
+                        <li data-id="1" class="is-selected">1</li>
+                        <li data-id="2">2</li>
+                        <li data-id="3">3</li>
+                        <li data-id="4">4</li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="form__right">
-              <div class="form__label">
-                <div class="form__labelmeta">Класс перелета</div>
-                <div class="select js-select">
-                  <span class="select__value"><em class="js-select-text">Эконом</em><i></i></span>
-                  <input type="hidden" val="" class="js-select-input" value="Эконом">
-                  <div class="select__drop js-select-drop">
-                    <ul>
-                      <li data-id="1" class="is-selected">Эконом</li>
-                      <li data-id="2">1</li>
-                      <li data-id="3">2</li>
-                      <li data-id="4">3</li>
-                    </ul>
-                  </div>
+          </div>
+          <div class="form__right">
+            <div class="form__label">
+              <div class="form__labelmeta">Класс перелета</div>
+              <div class="select js-select">
+                <span class="select__value"><em class="js-select-text">Эконом</em><i></i></span>
+                <input type="hidden" val="" class="js-select-input" value="Эконом">
+                <div class="select__drop js-select-drop">
+                  <ul>
+                    <li data-id="1" class="is-selected">Эконом</li>
+                    <li data-id="2">1</li>
+                    <li data-id="3">2</li>
+                    <li data-id="4">3</li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="form__row">
-            <a href="#" class="form__search">Найти авиабилет</a>
-          </div>
+        </div>
+        <div class="form__row">
+          <a href="#" class="form__search">Найти авиабилет</a>
         </div>
       </div>
     </div>
-    <div class="page__footer js-nav">
-      <a href="#js-slide1" class="footer__link">Скрыть поисковую форму</a>
-    </div>
-  </section>
+  </div>
+  <div class="page__footer js-nav">
+    <a href="#" class="footer__link js-close-form">Скрыть поисковую форму</a>
+  </div>
 </div>
-<!-- ./ main-->
 
 
 
