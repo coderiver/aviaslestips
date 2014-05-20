@@ -91,6 +91,4 @@ head.ready(function() {
 	}
 	height();
 
-
-
 });

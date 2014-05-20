@@ -16,7 +16,7 @@ $font-base: 'Open Sans', sans-serif
 // Common blocks
 // --------------------------------------------------
 body
-	min-width: 1000px
+	min-width: 1400px
 	font-size: 14px 
 	font-family: $font-base
 	line-height: 1.4
@@ -126,6 +126,8 @@ body
 		position: absolute
 		top: 50%
 		margin-top: -250px
+		left: 50%
+		margin-left: -480px
 	.page__contentleft
 		width: 480px
 		float: left
@@ -133,8 +135,8 @@ body
 		width: 480px
 		float: right
 	.page__contentbottom
-		margin-top: 50px
 		padding-top: 15px
+		margin-top: 20px
 		border-top: 4px solid #F1F1F1
 		+clr
 	.page__contentbottom
@@ -161,17 +163,21 @@ body
 		margin-top: 107px
 
 .page9
-	display: none
+	opacity: 0
 	z-index: 3333
 	position: fixed
 	top: 0
 	left: 0
 	right: 0
+	+transition(all .3s ease-in)
+	@include transform(translate3d(0, 100%, 0))
 	.page__footer
 		position: absolute
 		bottom: 0
 	&.is-active
-		display: block
+		opacity: 1 
+		+transition(all .3s ease-in)
+		@include transform(translate3d(0, 0, 0))
 .page1
 	z-index: 2200
 	background: #00AFDD
@@ -427,8 +433,10 @@ body
 
 .cycle-item
 	width: 100%
-	height: 361px
+	max-height: 300px
 	overflow: hidden
+	p
+		max-height: 285px 
 
 .nav
 	position: fixed
@@ -441,12 +449,87 @@ body
 		&.is-active
 			a
 				background: #00AFDD
+	.nav__1
+		&.is-active
+			a
+				&:after
+					content: "Сравнивайте цены"
+		a
+			&:hover
+				&:after
+					content: "Сравнивайте цены"
+	.nav__2
+		&.is-active
+			a
+				&:after
+					content: "Берегите своё время"
+		a
+			&:hover
+				&:after
+					content: "Берегите своё время"
+	.nav__3
+		&.is-active
+			a
+				&:after
+					content: "Доверяйте надёжным"
+		a
+			&:hover
+				&:after
+					content: "Доверяйте надёжным"
+	.nav__4
+		&.is-active
+			a
+				&:after
+					content: "Платите картой"
+		a
+			&:hover
+				&:after
+					content: "Платите картой"
+	.nav__5
+		&.is-active
+			a
+				&:after
+					content: "Поиграйте с датами"
+		a
+			&:hover
+				&:after
+					content: "Поиграйте с датами"
+	.nav__6
+		&.is-active
+			a
+				&:after
+					content: "Путешествуйте с картой"
+		a
+			&:hover
+				&:after
+					content: "Путешествуйте с картой"
+	.nav__7
+		&.is-active
+			a
+				&:after
+					content: "Ищите на aviasales.ru"
+		a
+			&:hover
+				&:after
+					content: "Ищите на aviasales.ru"
 	a
 		width: 20px
 		height: 20px
 		+border-radius(50%)
 		background: #e2e2e2
 		display: block
+		text-decoration: none
+		position: relative
+		&:after
+			width: 200px
+			font-size: 14px
+			+font-bold
+			text-transform: uppercase
+			color: #00AFDD
+			text-decoration: none
+			position: absolute
+			left: 30px
+			top: 0
 
 
 	
