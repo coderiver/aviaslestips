@@ -25,6 +25,7 @@ body { min-width: 1400px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .out { height: 100% !important; height: 100%; margin: 0 auto; overflow: hidden; }
 
 .container { width: 960px; margin-left: auto; margin-right: auto; }
+@media only screen and (max-width: 960px) { .container { width: 480px; } }
 
 .h2 { margin-bottom: 30px; font-size: 24px; color: #444444; font-family: "Open Sans", sans-serif; font-weight: 600; }
 
@@ -56,7 +57,7 @@ body { min-width: 1400px; font-size: 14px; font-family: "Open Sans", sans-serif;
 @media only screen and (max-width: 960px) { .page { height: auto !important; } }
 .page .page__content { font-size: 18px; line-height: 1.8; color: #888888; *zoom: 1; font-family: "Open Sans", sans-serif; font-weight: 600; height: 500px; overflow: hidden; position: absolute; top: 50%; margin-top: -250px; left: 50%; margin-left: -480px; }
 .page .page__content:after { content: " "; display: table; clear: both; }
-@media only screen and (max-width: 960px) { .page .page__content { width: 480px; height: auto; margin-left: -240px; } }
+@media only screen and (max-width: 960px) { .page .page__content { width: 480px; height: auto; margin-left: auto; margin-right: auto; margin-top: 0; position: static; } }
 .page .page__contentleft { width: 480px; float: left; }
 @media only screen and (max-width: 960px) { .page .page__contentleft { float: none; display: block; } }
 .page .page__contentright { width: 480px; float: right; }
