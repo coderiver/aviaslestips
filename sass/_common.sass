@@ -44,6 +44,10 @@ body
 	text-decoration: none
 	color: #CCC
 .paragraph
+	&:hover
+		color: #00afdd
+		&:before
+			+arr(10,16,#00afdd,l)
 	&.disabled
 		display: none
 	&:before
@@ -53,6 +57,10 @@ body
 		display: inline-block
 		vertical-align: middle
 .more
+	&:hover
+		color: #00afdd
+		&:after
+			+arr(10,16,#00afdd,r)
 	&.disabled
 		display: none
 	&:after
@@ -104,14 +112,19 @@ body
 		text-transform: uppercase
 		line-height: 1.2
 		+font-bold
-		color: #FFF
+		color: #e2e2e2
 		text-decoration: none
-		border-bottom: 2px dashed #fff
+		border-bottom: 2px dashed #e2e2e2
 		cursor: pointer
+		&:hover
+			color: #00afdd
+			border-color: #00afdd 
 
 .page
 	min-height: 600px
 	position: relative
+	+r(w960)
+		height: auto !important 
 	// &.page1
 	// 	.page__content
 	// 		margin-top: -200px
@@ -128,12 +141,22 @@ body
 		margin-top: -250px
 		left: 50%
 		margin-left: -480px
+		+r(w960)
+			width: 480px
+			height: auto
+			margin-left: -240px
 	.page__contentleft
 		width: 480px
 		float: left
+		+r(w960)
+			float: none
+			display: block
 	.page__contentright
 		width: 480px
 		float: right
+		+r(w960)
+			float: none
+			display: block
 	.page__contentbottom
 		padding-top: 15px
 		margin-top: 20px
@@ -446,72 +469,44 @@ body
 	z-index: 2000
 	li
 		margin-bottom: 10px
+		&:hover
+			a
+				background: #00AFDD
+				&:after
+					color: #00AFDD
 		&.is-active
 			a
 				background: #00AFDD
+				&:after
+					color: #00AFDD
 	.nav__1
-		&.is-active
-			a
-				&:after
-					content: "Сравнивайте цены"
 		a
-			&:hover
-				&:after
-					content: "Сравнивайте цены"
+			&:after
+				content: "Сравнивайте цены"
 	.nav__2
-		&.is-active
-			a
-				&:after
-					content: "Берегите своё время"
 		a
-			&:hover
-				&:after
-					content: "Берегите своё время"
+			&:after
+				content: "Берегите своё время"
 	.nav__3
-		&.is-active
-			a
-				&:after
-					content: "Доверяйте надёжным"
 		a
-			&:hover
-				&:after
-					content: "Доверяйте надёжным"
+			&:after
+				content: "Доверяйте надёжным"
 	.nav__4
-		&.is-active
-			a
-				&:after
-					content: "Платите картой"
 		a
-			&:hover
-				&:after
-					content: "Платите картой"
+			&:after
+				content: "Платите картой"
 	.nav__5
-		&.is-active
-			a
-				&:after
-					content: "Поиграйте с датами"
 		a
-			&:hover
-				&:after
-					content: "Поиграйте с датами"
+			&:after
+				content: "Поиграйте с датами"
 	.nav__6
-		&.is-active
-			a
-				&:after
-					content: "Путешествуйте с картой"
 		a
-			&:hover
-				&:after
-					content: "Путешествуйте с картой"
+			&:after
+				content: "Путешествуйте с картой"
 	.nav__7
-		&.is-active
-			a
-				&:after
-					content: "Ищите на aviasales.ru"
 		a
-			&:hover
-				&:after
-					content: "Ищите на aviasales.ru"
+			&:after
+				content: "Ищите на aviasales.ru"
 	a
 		width: 20px
 		height: 20px
@@ -523,9 +518,9 @@ body
 		&:after
 			width: 200px
 			font-size: 14px
+			color: #CCC
 			+font-bold
 			text-transform: uppercase
-			color: #00AFDD
 			text-decoration: none
 			position: absolute
 			left: 30px
