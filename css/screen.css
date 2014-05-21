@@ -50,8 +50,8 @@ body { min-width: 1400px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .header .header__logometa { font-size: 12px; font-weight: 200; font-size: italic; }
 
 .page__footer { height: 100px; background: #00a2cc; text-align: center; position: fixed; bottom: 0; left: 0; right: 0; z-index: 2666; }
-.page__footer .footer__link { height: 48px; margin-top: 25px; display: inline-block; font-size: 40px; text-transform: uppercase; line-height: 1.2; font-family: "Open Sans", sans-serif; font-weight: 600; color: #e2e2e2; text-decoration: none; border-bottom: 2px dashed #e2e2e2; cursor: pointer; }
-.page__footer .footer__link:hover { color: #00afdd; border-color: #00afdd; }
+.page__footer .footer__link { height: 48px; margin-top: 25px; display: inline-block; font-size: 40px; text-transform: uppercase; line-height: 1.2; font-family: "Open Sans", sans-serif; font-weight: 600; color: #dbf8ff; text-decoration: none; border-bottom: 2px dashed #dbf8ff; cursor: pointer; }
+.page__footer .footer__link:hover { color: white; border-color: white; }
 
 .page { min-height: 600px; position: relative; }
 @media only screen and (max-width: 960px) { .page { height: auto !important; } }
