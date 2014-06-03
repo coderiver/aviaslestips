@@ -187,7 +187,8 @@ body { min-width: 1400px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .nav .nav__6 a:after { content: "Путешествуйте с картой"; }
 .nav .nav__7 a:after { content: "Ищите на aviasales.ru"; }
 .nav a { width: 20px; height: 20px; -webkit-border-radius: 50%; -moz-border-radius: 50%; -ms-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%; background: #e2e2e2; display: block; text-decoration: none; position: relative; }
-.nav a:after { width: 200px; font-size: 11px; color: #cccccc; font-family: "Open Sans", sans-serif; font-weight: 600; text-transform: uppercase; text-decoration: none; position: absolute; left: 30px; top: 3px; }
+.nav a:after { width: 200px; font-size: 13px; color: #cccccc; font-family: "Open Sans", sans-serif; font-weight: 600; text-transform: uppercase; text-decoration: none; position: absolute; left: 30px; top: 3px; }
+@media screen and (max-width: 1400px) { .nav a:after { display: none; } }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
