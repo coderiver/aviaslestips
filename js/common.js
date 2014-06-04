@@ -18,6 +18,7 @@ head.ready(function() {
 
 	$('.js-toggle-form').on('click', function() {
 		$(".js-form").toggleClass("is-active");
+		$('.footer__link span').toggle();
 		return false;
 	});
 
