@@ -22,7 +22,7 @@ ul, ol { list-style-type: none; }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { min-width: 1120px; font-size: 14px; font-family: "Open Sans", sans-serif; line-height: 1.4; }
-@media screen and (max-width: 1120px) { body { min-width: 600px; } }
+@media only screen and (max-width: 960px) { body { min-width: 620px; } }
 
 .out { height: 100% !important; height: 100%; margin: 0 auto; overflow: hidden; }
 
