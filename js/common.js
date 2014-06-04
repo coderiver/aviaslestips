@@ -16,8 +16,8 @@ head.ready(function() {
 	 return false;
 	});
 
-	$('.js-close-form').on('click', function() {
-		$(".js-form").removeClass("is-active");
+	$('.js-toggle-form').on('click', function() {
+		$(".js-form").toggleClass("is-active");
 		return false;
 	});
 
