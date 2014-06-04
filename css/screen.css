@@ -58,7 +58,7 @@ body { min-width: 1120px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .page__footer .footer__link:hover { color: white; border-color: white; }
 
 .page { min-height: 600px; position: relative; }
-@media only screen and (max-width: 960px) { .page { height: auto !important; } }
+@media only screen and (max-width: 960px) { .page { height: auto !important; min-height: 0; padding-bottom: 30px; margin-bottom: 20px; } }
 .page .page__content { font-size: 18px; line-height: 1.8; color: #888888; *zoom: 1; font-family: "Open Sans", sans-serif; font-weight: 600; height: 500px; overflow: hidden; position: absolute; top: 50%; margin-top: -250px; left: 50%; margin-left: -480px; }
 .page .page__content:after { content: " "; display: table; clear: both; }
 @media only screen and (max-width: 960px) { .page .page__content { width: 480px; height: auto; margin-left: auto; margin-right: auto; margin-top: 0; position: static; } }
