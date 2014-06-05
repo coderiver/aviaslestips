@@ -80,6 +80,7 @@ body { min-width: 1120px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .page .page__ico-5 { margin-top: 128px; }
 .page .page__ico-6 { margin-top: 100px; }
 .page .page__ico-7 { margin-top: 107px; }
+@media only screen and (max-width: 960px) { .page .page__ico-1, .page .page__ico-2, .page .page__ico-3, .page .page__ico-4, .page .page__ico-5, .page .page__ico-6, .page .page__ico-7 { margin-top: 30px; } }
 
 .page9 { opacity: 0; z-index: 3333; position: fixed; top: 0; left: 0; right: 0; bottom: 0px; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in; transition: all 0.3s ease-in; -webkit-transform: translate3d(0, 100%, 0); -moz-transform: translate3d(0, 100%, 0); -ms-transform: translate3d(0, 100%, 0); -o-transform: translate3d(0, 100%, 0); transform: translate3d(0, 100%, 0); }
 @media only screen and (max-width: 960px) { .page9 { margin-bottom: 0; padding-bottom: 0; } }
