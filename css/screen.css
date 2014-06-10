@@ -22,7 +22,7 @@ ul, ol { list-style-type: none; }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 body { min-width: 1120px; font-size: 14px; font-family: "Open Sans", sans-serif; line-height: 1.4; }
-@media only screen and (max-width: 960px) { body { min-width: 0; } }
+@media only screen and (max-width: 960px) { body { min-width: 0; padding-bottom: 100px; } }
 
 .out { height: 100% !important; height: 100%; margin: 0 auto; overflow: hidden; }
 
@@ -87,10 +87,10 @@ body { min-width: 1120px; font-size: 14px; font-family: "Open Sans", sans-serif;
 .page9 .page__footer { position: absolute; bottom: 0; }
 .page9.is-active { opacity: 1; -webkit-transition: all 0.3s ease-in; -moz-transition: all 0.3s ease-in; -o-transition: all 0.3s ease-in; transition: all 0.3s ease-in; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
 
-.page8 { margin-bottom: 100px; }
+.page8 { padding-bottom: 100px; }
 
 .page1 { z-index: 2200; background: #00afdd; }
-.page1 .page__all { padding-bottom: 100px; }
+.page1 .page__all { padding-bottom: 120px; }
 .page1 .page__all .page__content { height: 400px; margin-top: -200px; }
 .page1 .h1 { margin-bottom: 20px; font-size: 40px; font-weight: normal; color: white; }
 .page1 .page1__meta { margin-bottom: 60px; font-size: 18px; color: #dbf8ff; }
